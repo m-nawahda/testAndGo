@@ -1,0 +1,62 @@
+.topNavContainer {
+  background: #e92429;
+  color: #fff;
+}
+
+.selectLanguage {
+  text-decoration: underline;
+  cursor: pointer;
+}
+nav {
+  border-bottom: 4px solid;
+  border-color: #a6a7aa;
+}
+@media (min-width: 998px) {
+  .navBarItems {
+    flex-basis: content;
+    flex-grow: inherit;
+  }
+
+  .nav-item {
+    padding: 0 1rem;
+    color: #808080;
+    border-left: 2px solid #e92429;
+  }
+
+  .nav-item:first-child {
+    border-left: none;
+  }
+}
+
+.navbar-nav {
+  align-items: center;
+}
+.nav-item {
+  height: 20px;
+  align-items: center;
+  display: flex;
+  padding: 0 0.5rem;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.active {
+  color: #e92429 !important;
+}
+
+.searchIcon {
+  height: 40px;
+  border-left: 0;
+  align-items: center;
+  display: flex;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+@media (max-width: 650px) {
+  .navbar-nav {
+    align-items: flex-start;
+  }
+}

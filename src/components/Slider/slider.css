@@ -1,0 +1,183 @@
+.card {
+  width: 20%;
+  height: 50%;
+  border-radius: 10px 10px 0 10px;
+}
+
+.slideItem {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.card-title {
+  font-size: 37px;
+  font-weight: 500;
+}
+.card-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #a6a7aa;
+}
+
+.FindLink {
+  color: #e92429;
+  font-size: 20px;
+}
+
+.sliderFooterItemContainer,
+.sliderFooterItem,
+.aboutFooter,
+.itemsContainer,
+.sliderFooter,
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderFooter {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+
+.contentFooter {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.itemsContainer {
+  height: 80%;
+  padding-left: 10%;
+  background-color: rgba(128, 128, 128, 0.6);
+  border-top-right-radius: 15px;
+}
+
+.sliderFooterItemContainer {
+  width: 75%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sliderFooterItem {
+  height: 100%;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sliderFooterItem img {
+  width: 70px;
+  height: 33%;
+  margin-bottom: 0.5rem;
+}
+
+.sliderFooterItem div h6 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.itemContent span {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(40, 40, 40);
+}
+
+.aboutFooter {
+  width: 100%;
+  height: 15%;
+  border-top: 2px solid black;
+  background-color: white;
+  border-bottom-right-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.arrow {
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(0% 15px, 0% 0%, 15px 7px);
+  margin-left: 15px;
+  background-color: #e92429;
+}
+.shape {
+  width: 20%;
+  padding: 10px;
+  background-color: #e92429;
+  position: relative;
+  border-radius: 15px 0 0 15px;
+  z-index: 1;
+}
+
+.shape .link {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.before {
+  width: 35%;
+  height: 125%;
+  position: absolute;
+  left: calc(100% - 1px);
+  background-color: #e92429;
+  border-left: 1pt solid rgba(255, 255, 255, 0.15);
+  clip-path: polygon(0% 100%, 0% 0%, 100% 50%);
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .card,
+  .before {
+    display: none;
+  }
+
+  .contentFooter {
+    flex-direction: column;
+  }
+  .shape,
+  .sliderFooterItemContainer,
+  .sliderFooterItem,
+  .itemsContainer {
+    width: 100%;
+  }
+  .itemsContainer {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0;
+  }
+  .shape {
+    border-radius: 15px 15px 0 0;
+    flex-direction: column;
+  }
+  .aboutFooter {
+    border-radius: 0 0 15px 15px;
+  }
+  .sliderFooterItem {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .sliderFooterItem img {
+    margin: 10px;
+  }
+  .sliderFooterItem .itemContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .itemContent span {
+    font-size: 9px;
+    font-weight: 700;
+    text-align: start;
+  }
+}

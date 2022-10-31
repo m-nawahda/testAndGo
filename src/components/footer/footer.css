@@ -1,0 +1,96 @@
+.FooterContainer {
+  background-color: #424242;
+  color: white;
+}
+
+.FooterContainer li {
+  background-color: #424242;
+  color: white;
+  padding-left: 0px;
+  border-width: 0 !important;
+}
+.Footer {
+  padding-top: 2.5rem;
+}
+.FooterContainer p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.dataPart {
+  display: flex;
+}
+.dataPart {
+  text-align: end;
+}
+.dataPart h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.dataPart h6 {
+  font-size: 1rem;
+}
+
+.redLine {
+  color: #e92429;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.language {
+  font-weight: 700;
+  font-size: 0.7rem;
+  width: 70%;
+}
+
+.languages {
+  font-size: 0.7rem;
+}
+
+.fixed {
+  position: fixed;
+  bottom: -88%;
+  right: -60%;
+  width: 100%;
+  height: 100%;
+  background-color: #e92429;
+  padding: 0 20px;
+  border-radius: 100%;
+  transition: 0.7s;
+}
+
+.expanded {
+  bottom: -70%;
+  right: -55%;
+}
+
+.fixed .locationLabel, .fixed .searchFieldContainer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media (min-width: 650px) {
+  .dataPart {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 650px) {
+  .fixed {
+    bottom: -85%;
+    right: -50%;
+  }
+
+  .expanded {
+    width: 200%;
+    height: 150%;
+    bottom: -110%;
+    right: -100%;
+  }
+
+  .dataPart {
+    text-align: start;
+  }
+}

@@ -1,0 +1,197 @@
+.container {
+  max-width: 1148px;
+  margin: auto;
+}
+
+.headerText {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.test {
+  width: 100%;
+  height: 400px;
+}
+
+.firstChildren {
+  float: left;
+  width: 50%;
+}
+
+.secondChildren {
+  float: right;
+  width: 50%;
+  margin-left: -400px;
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background: url(/public/images/covid.png);
+  height: 400px;
+}
+
+.curved {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background: url(/public/images/COVID_Test_Man.png);
+  height: 400px;
+  /* margin-right: -68px; */
+}
+
+.rectangle h3 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.rectangle p {
+  max-width: 350px;
+}
+
+.rectangle a {
+  font-size: 28px;
+}
+
+.covidTesting {
+  display: flex;
+  background: #e5e5e5;
+}
+.covidTesting div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.covidTesting div p {
+  width: 70%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.covidTesting div h2 {
+  font-weight: 900;
+}
+
+.covidTesting div a {
+  font-size: 28px;
+  width: 70%;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.imageWrapper {
+  padding-left: 0;
+}
+.imageWrapper img {
+  width: 100%;
+}
+
+.locationForm {
+  background: #e92429;
+  color: #fff;
+}
+
+.locationInput {
+  max-width: 350px;
+}
+
+.locationText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lab {
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: url(/public/images/Long_Lab.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.5; */
+}
+
+.lab div {
+  width: 60%;
+  padding: 2rem;
+}
+.lab h1 {
+  font-weight: 600;
+}
+
+.lab p {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.lab a {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: underline !important;
+}
+
+@media (max-width: 650px) {
+  .lab a {
+    font-size: 18px;
+  }
+  .firstChildren {
+    display: none;
+  }
+
+  .secondChildren {
+    width: 100%;
+  }
+
+  .rectangle {
+    width: 100%;
+    background: url(/public/images/covidMobile.png);
+    left: 0;
+  }
+
+  .covidTesting {
+    flex-direction: column-reverse;
+  }
+
+  .covidTesting div {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .covidTesting div a {
+    font-size: 20px;
+  }
+
+  .location {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .lab {
+    flex-direction: row;
+  }
+
+  .lab div {
+    width: 100%;
+  }
+}

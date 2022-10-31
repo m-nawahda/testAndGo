@@ -1,0 +1,10 @@
+.searchFieldContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.currentLocation {
+    font-weight: 600;
+    color: #222;
+  }
