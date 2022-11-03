@@ -2,7 +2,7 @@ import React from "react";
 import './searchField.css'
 const SearchField = () => {
   return (
-    <div className="searchFieldContainer">
+    <div className="searchField">
       <h4>Find a KIOSK near you</h4>
       <div
         className="input-group mb-2"
@@ -12,7 +12,7 @@ const SearchField = () => {
       >
         <div className="input-group-prepend">
           <span className="input-group-text">
-            <img src="/images/location.svg" width="25px" />
+            <img src="/images/location.svg" width="25px" alt="location"/>
           </span>
         </div>
         <input

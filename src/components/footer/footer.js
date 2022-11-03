@@ -28,17 +28,32 @@ const Footer = () => {
           </div>
           <div className=" dataPart col-md-6 col-sm-12  ">
             <div className="">
-              <img src="/images/logo.png" width="200px" />
+              <img src="/images/logo.png" width="200px" alt="logo" />
               <h5 className="mt-3">Corporate Oce</h5>
               <h6>(703) 657-5500</h6>
               <h6> info@LTS.com</h6>
               <h6> 12930 Worldgate Drive</h6>
               <h6> Suite 300</h6>
               <h6>Herndon, VA 20170</h6>
-              <img className="mx-2" width="30" src="/images/facebook.svg" />
-              <img width="30" className="mx-2" src="/images/twitter.svg" />
-              <img className="mx-2" width="30" src="/images/instagram.svg" />
-              <img width="30" src="/images/linkedin.svg" />
+              <img
+                className="mx-2"
+                width="30"
+                src="/images/facebook.svg"
+                alt="facebook"
+              />
+              <img
+                width="30"
+                className="mx-2"
+                src="/images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className="mx-2"
+                width="30"
+                src="/images/instagram.svg"
+                alt="instagram"
+              />
+              <img width="30" src="/images/linkedin.svg" alt="linkedin" />
             </div>
           </div>
         </div>
@@ -58,11 +73,25 @@ const Footer = () => {
       </div>
       <div
         className={"fixed" + (expanded ? " expanded" : "")}
-        onClick={() => {
-          setExpanded(!expanded);
+        onClick={(e) => {
+          if (e.target.className !== "closeBtn") setExpanded(true);
         }}
       >
-        {!expanded ? <span className="locationLabel">Find Location</span> : <SearchField />}
+        {!expanded ? (
+          <span className="locationLabel">Find Location</span>
+        ) : (
+          <div className="searchFieldContainer">
+            <div
+              className="closeBtn"
+              onClick={() => {
+                setExpanded(false);
+              }}
+            >
+              X
+            </div>
+            <SearchField />
+          </div>
+        )}
       </div>
     </div>
   );

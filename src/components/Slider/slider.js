@@ -105,37 +105,6 @@ const CustomSlider = () => {
           </React.Fragment>
         ))}
       </Slider>
-      {/* <div className="d-flex mobileView ">
-        <div className="sliderFooterItem ">
-          <img alt="covid" src="/images/Rapid_Results.png" />
-          <h6>Rapid Results</h6>
-          <span>Get quick reliable results to help you managent testing.</span>
-        </div>
-        <div className="sliderFooterItem ">
-          <img alt="covid" src="/images/Highest_Accuracy_Red.png" />
-          <h6>Highest Accuracy</h6>
-          <span>
-            We leverage the latest technology to provide the highest quality
-            available for COVID-19 testing.
-          </span>
-        </div>
-        <div className="sliderFooterItem ">
-          <img alt="covid" src="/images/Travel_Certificate.png" />
-          <h6>Travel Certificate</h6>
-          <span>
-            Traveling can be difficult. Don’t let COVID-19 testing be stressful
-            also. Our service is here to help ease your travel requirements
-          </span>
-        </div>
-        <div className="sliderFooterItem ">
-          <img alt="covid" src="/images/Self_Service_Testing.png" />
-          <h6>Self-Service Testing</h6>
-          <span>
-            We have worked with many local and federal programs to provide drive
-            up sites kiosk based COVID-19 testing.
-          </span>
-        </div>
-      </div> */}
     </div>
   );
 };

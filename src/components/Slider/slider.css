@@ -173,7 +173,7 @@
   .sliderFooterItem .itemContent {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
   .itemContent span {
     font-size: 9px;

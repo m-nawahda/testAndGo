@@ -65,10 +65,20 @@
   right: -55%;
 }
 
-.fixed .locationLabel, .fixed .searchFieldContainer {
+.fixed .locationLabel,
+.fixed .searchFieldContainer {
   position: fixed;
   right: 10px;
   bottom: 10px;
+}
+
+.searchFieldContainer .closeBtn {
+  position: absolute;
+  right: 10px;
+  top: -40px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
@@ -80,7 +90,7 @@
 @media (max-width: 650px) {
   .fixed {
     bottom: -85%;
-    right: -50%;
+    right: -40%;
   }
 
   .expanded {
